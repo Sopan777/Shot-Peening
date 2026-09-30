@@ -31,11 +31,16 @@ IF NOT EXIST "%MODEL_PATH%" (
     EXIT /B 1
 )
 
+REM CPU optimization: use 16 threads (Intel Core Ultra 5 235)
+SET OMP_NUM_THREADS=16
+SET MKL_NUM_THREADS=16
+
 python "%SCRIPT_DIR%src\predict.py" ^
     --model_path "%MODEL_PATH%" ^
     --input "%INPUT_DIR%" ^
     --output_dir "%OUTPUT_DIR%" ^
-    --threshold 0.5
+    --threshold 0.5 ^
+    --img_size 256
 
 ECHO.
 ECHO  Results saved to: %OUTPUT_DIR%
