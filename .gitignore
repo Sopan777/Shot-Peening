@@ -16,9 +16,8 @@ env/
 .env
 .venv/
 
-# Jupyter
+# Jupyter — only ignore checkpoints, not the notebook itself
 .ipynb_checkpoints/
-*.ipynb
 
 # Data — large files, not tracked in git
 data/raw/images/
