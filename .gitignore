@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data — large files, not tracked in git
+data/raw/images/
+data/raw/masks/
+data/raw/annotations/
+data/train/
+data/val/
+data/test/
+
+# Model checkpoints — large binary files
+outputs/models/*.pth
+outputs/models/*.pt
+outputs/models/*.ckpt
+
+# TensorBoard logs
+outputs/logs/tensorboard/
+
+# Results/predictions
+results/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled pycache
+src/__pycache__/
+tools/__pycache__/

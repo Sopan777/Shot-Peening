@@ -1,0 +1,7 @@
+# Data directory — images and masks are NOT tracked by git.
+# Only this placeholder file is committed so the folder structure is preserved.
+#
+# To populate this folder:
+#   1. Copy your .tif images into data/raw/images/
+#   2. Run START_ANNOTATION.bat to annotate
+#   3. Run PREPARE_DATA.bat to split into train/val/test
